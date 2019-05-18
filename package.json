@@ -1,0 +1,36 @@
+{
+  "name": "electron-ext-icon",
+  "version": "1.0.0",
+  "description": "Get associated icon with file extension.",
+  "keywords": [
+    "electron",
+    "typescript",
+    "file",
+    "extension"
+  ],
+  "author": {
+    "name": "Mikołaj Palkiewicz",
+    "email": "xnerhu@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xnerhu/electron-ext-icon.git"
+  },
+  "homepage": "https://github.com/xnerhu/electron-ext-icon#readme",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "npm run clean && tsc",
+    "buildOnly": "npm run build",
+    "prepublishOnly": "npm run build",
+    "clean": "rimraf ./build",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "@types/electron": "1.6.10",
+    "rimraf": "2.6.3",
+    "typescript": "3.4.2"
+  }
+}
