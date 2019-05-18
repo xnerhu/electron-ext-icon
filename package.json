@@ -1,7 +1,7 @@
 {
   "name": "electron-ext-icon",
-  "version": "1.0.0",
-  "description": "Get associated icon with file extension.",
+  "version": "1.0.1",
+  "description": "Get icon associated with file extension.",
   "keywords": [
     "electron",
     "typescript",
